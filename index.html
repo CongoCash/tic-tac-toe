@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- link to custom stylesheet (always require after Bootstrap) -->
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <!-- jQuery from CDN -->
-
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
 
@@ -26,7 +27,7 @@
           <hr>
         </div>
       </div>
-      <div class="row">
+      <div class="row game-board">
 
         <!-- a column represents our game board -->
         <!-- the `offset` class helps us center the board -->
@@ -35,14 +36,27 @@
           <!-- you can put rows inside of columns! -->
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
           <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
+            <div id = "zero"class="col-md-4 box"></div>
+            <div id = "one" class="col-md-4 box"></div>
+            <div id = "two" class="col-md-4 box"></div>
+          </div>
+          <div class="row">
+            <div id = "three" class="col-md-4 box"></div>
+            <div id = "four" class="col-md-4 box"></div>
+            <div id = "five" class="col-md-4 box"></div>
+          </div>
+          <div class="row">
+            <div id = "six" class="col-md-4 box"></div>
+            <div id = "seven" class="col-md-4 box"></div>
+            <div id = "eight" class="col-md-4 box"></div>
           </div>
 
 
 
         </div>
+      </div>
+      <div class="center-button">
+        <button type="submit" class="btn">Reset</button>
       </div>
     </div>
   </body>
